@@ -1,0 +1,29 @@
+<!-- templates/post.html -->
+<h1>post your photo</h1>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">banner 1</button>
+</form>
+<br>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">banner 2</button>
+</form>
+<br>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">banner 3</button>
+</form>
+<br>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">banner 4</button>
+</form>
+
+<form action="{% url 'user' %}">
+    <input type="submit" value="your posts"/>
+</form>
